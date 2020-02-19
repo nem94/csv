@@ -1,0 +1,84 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Article modal</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form [formGroup]="csvFormGroup">
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="number">Number</label>
+                    <input formControlName="number" id="number" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input formControlName="name" id="name" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="manufacturer">Manufacturer</label>
+                    <input formControlName="manufacturer" id="manufacturer" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea formControlName="description" id="description" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="materialInformation">Material information</label>
+                    <input formControlName="materialInformation" id="materialInformation" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input formControlName="gender" id="gender" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="productType">Product type</label>
+                    <input formControlName="productType" id="productType" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="sleeve">Sleeve</label>
+                    <input formControlName="sleeve" id="sleeve" class="form-control" />
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="leg">Leg</label>
+                    <input formControlName="leg" id="leg" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="collar">Collar</label>
+                    <input formControlName="collar" id="collar" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="manufacturing">Manufacturing</label>
+                    <input formControlName="manufacturing" id="manufacturing" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="bagStyle">Bag style</label>
+                    <input formControlName="bagStyle" id="bagStyle" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="grammage">Grammage</label>
+                    <input formControlName="grammage" id="grammage" class="form-control" /></div>
+                <div class="form-group">
+                    <label for="material">Material</label>
+                    <input formControlName="material" id="material" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="originCountry">Country of origin</label>
+                    <input formControlName="originCountry" id="originCountry" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="imageName">Image name</label>
+                    <input formControlName="imageName" id="imageName" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="save()">Submit</button>
+    </form>
+</div>
